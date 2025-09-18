@@ -1,81 +1,185 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>研究室名称 - 官方主页</title>
+    <title>
+      京都大学 情報学研究科 感性情報科学研究室 | Kyoto University Affective Computing Laboratory
+    </title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="site-header">
+  <body data-lang="ja">
+    <header class="site-header" role="banner">
       <div class="container">
         <div class="brand">
-          <a class="logo" href="#">研究室名称</a>
-          <p class="tagline">Research Laboratory Tagline or Mission Statement</p>
+          <a class="logo" href="#">
+            <span class="i18n-ja">京都大学 情報学研究科 感性情報科学研究室</span>
+            <span class="i18n-en">Kyoto University Affective Computing Laboratory</span>
+          </a>
+          <p class="tagline">
+            <span class="i18n-ja">感情理解とインタラクションの未来を拓く</span>
+            <span class="i18n-en">Advancing Emotionally Intelligent Technologies</span>
+          </p>
         </div>
-        <nav class="site-nav" aria-label="主导航">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
-            <span class="sr-only">展开导航</span>
+        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            aria-label="Open navigation"
+          >
             ☰
           </button>
           <ul id="primary-menu">
-            <li><a href="#about">研究室简介</a></li>
-            <li><a href="#research">研究方向</a></li>
-            <li><a href="#news">最新动态</a></li>
-            <li><a href="#people">成员</a></li>
-            <li><a href="#publications">代表论文</a></li>
-            <li><a href="#opportunities">招生招聘</a></li>
-            <li><a href="#contact">联系我们</a></li>
+            <li>
+              <a href="#about">
+                <span class="i18n-ja">研究室について</span>
+                <span class="i18n-en">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#research">
+                <span class="i18n-ja">研究領域</span>
+                <span class="i18n-en">Research</span>
+              </a>
+            </li>
+            <li>
+              <a href="#news">
+                <span class="i18n-ja">ニュース</span>
+                <span class="i18n-en">News</span>
+              </a>
+            </li>
+            <li>
+              <a href="#people">
+                <span class="i18n-ja">メンバー</span>
+                <span class="i18n-en">People</span>
+              </a>
+            </li>
+            <li>
+              <a href="#publications">
+                <span class="i18n-ja">主要論文</span>
+                <span class="i18n-en">Publications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#opportunities">
+                <span class="i18n-ja">参加希望</span>
+                <span class="i18n-en">Join Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span class="i18n-ja">アクセス</span>
+                <span class="i18n-en">Contact</span>
+              </a>
+            </li>
           </ul>
         </nav>
+        <div class="language-switcher" role="group" aria-label="Language toggle">
+          <button class="lang-toggle active" data-switch-lang="ja" aria-pressed="true">日本語</button>
+          <button class="lang-toggle" data-switch-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero" role="img" aria-label="实验室宣传图">
+      <section class="hero" role="img" aria-label="Affective computing laboratory hero image">
         <div class="container">
           <div class="hero-content">
-            <h1>欢迎来到研究室名称</h1>
-            <p>
-              在这里写下研究室的核心使命或愿景，用简短有力的语言概括实验室关注的问题和独特优势。
+            <p class="eyebrow">
+              <span class="i18n-ja">Kyoto University Graduate School of Informatics</span>
+              <span class="i18n-en">Kyoto University Graduate School of Informatics</span>
             </p>
-            <a class="btn" href="#contact">了解合作机会</a>
+            <h1>
+              <span class="i18n-ja">感性と知能の融合で、人と機械の共感をデザインする</span>
+              <span class="i18n-en">Designing Empathetic Technologies at the Intersection of Emotion and Intelligence</span>
+            </h1>
+            <p>
+              <span class="i18n-ja">
+                当研究室は、感情推定・情動対話・マルチモーダルセンシングを通じて、人と機械がより豊かにつながるインタラクションを探究しています。
+              </span>
+              <span class="i18n-en">
+                We explore affective sensing, emotional dialogue, and multimodal interaction to enable technology that understands and resonates with human experience.
+              </span>
+            </p>
+            <a class="btn" href="#opportunities">
+              <span class="i18n-ja">共同研究・受験情報</span>
+              <span class="i18n-en">Collaboration & Admissions</span>
+            </a>
           </div>
-          <div class="hero-image" aria-hidden="true">
-            <p>可替换成实验室合照或科研相关图片</p>
+          <div class="hero-metrics" aria-hidden="true">
+            <div>
+              <strong>6+</strong>
+              <span class="i18n-ja">領域横断型プロジェクト</span>
+              <span class="i18n-en">Interdisciplinary Projects</span>
+            </div>
+            <div>
+              <strong>120+</strong>
+              <span class="i18n-ja">主要学術論文</span>
+              <span class="i18n-en">Peer-reviewed Papers</span>
+            </div>
+            <div>
+              <strong>8</strong>
+              <span class="i18n-ja">社会実装パートナー</span>
+              <span class="i18n-en">Industry Partners</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <h2>研究室简介</h2>
-          <p>
-            在此介绍研究室背景、所属院系、负责人等信息。可说明研究室成立时间、整体研究目标，以及与国内外单位合作情况。
-          </p>
-          <div class="highlight-grid">
+          <h2>
+            <span class="i18n-ja">研究室について</span>
+            <span class="i18n-en">About the Lab</span>
+          </h2>
+          <div class="about-grid">
             <article>
-              <h3>研究特色</h3>
+              <h3>
+                <span class="i18n-ja">ミッション</span>
+                <span class="i18n-en">Mission</span>
+              </h3>
               <p>
-                说明研究室独特的方法或技术路线，例如跨学科合作、先进仪器平台等。
+                <span class="i18n-ja">
+                  感情コンピューティングの知見を用い、人間理解とAIのインタラクションを再定義することを目指しています。京都大学の学際的ネットワークを活かし、心理学・認知科学・音声/映像処理などを統合します。
+                </span>
+                <span class="i18n-en">
+                  We design emotionally-aware systems that broaden the dialogue between humans and intelligent agents. Leveraging Kyoto University's interdisciplinary network, we integrate psychology, cognitive science, and advanced signal processing.
+                </span>
               </p>
             </article>
             <article>
-              <h3>研究平台</h3>
+              <h3>
+                <span class="i18n-ja">研究環境</span>
+                <span class="i18n-en">Research Environment</span>
+              </h3>
               <p>
-                描述实验室拥有的重要设备、平台或数据资源，便于访客了解基础设施。
+                <span class="i18n-ja">
+                  マルチモーダルセンシングスタジオ、没入型VR実験セットアップ、倫理対応データサーバなど、実験とデータ解析の両面を支える最新設備を整備しています。
+                </span>
+                <span class="i18n-en">
+                  Our facilities include a multimodal sensing studio, immersive VR interaction rigs, and secure data infrastructures that support ethical data collection and high-impact experimentation.
+                </span>
               </p>
             </article>
             <article>
-              <h3>社会影响</h3>
+              <h3>
+                <span class="i18n-ja">共創ネットワーク</span>
+                <span class="i18n-en">Collaborative Network</span>
+              </h3>
               <p>
-                总结研究成果对学术界或行业的影响，例如政策建议、技术转移或创业项目。
+                <span class="i18n-ja">
+                  国際大学・企業ラボとの共同研究を推進し、医療福祉・教育・エンタテインメント分野での社会実装を目指した連携案件が進行中です。
+                </span>
+                <span class="i18n-en">
+                  We partner with international labs and industry to translate affective computing breakthroughs into real-world impact across healthcare, education, and immersive media.
+                </span>
               </p>
             </article>
           </div>
@@ -84,39 +188,93 @@
 
       <section id="research" class="section section-alt">
         <div class="container">
-          <h2>研究方向</h2>
+          <h2>
+            <span class="i18n-ja">研究領域</span>
+            <span class="i18n-en">Research Focus</span>
+          </h2>
           <div class="research-list">
             <article>
-              <h3>方向一：主题名称</h3>
+              <h3>
+                <span class="i18n-ja">感情センシングと理解</span>
+                <span class="i18n-en">Affective Sensing & Understanding</span>
+              </h3>
               <p>
-                用简短的段落说明该研究方向的目标、关键技术，以及目前正在进行的项目。
+                <span class="i18n-ja">
+                  生体信号・音声・表情・姿勢など多様なモダリティを統合し、リアルタイムな情動状態推定モデルを構築します。
+                </span>
+                <span class="i18n-en">
+                  We fuse physiological, vocal, facial, and behavioral signals to infer affective states with interpretable, real-time models.
+                </span>
               </p>
               <ul>
-                <li>代表项目 A（可附链接）</li>
-                <li>代表成果 B</li>
-                <li>合作单位 C</li>
+                <li>
+                  <span class="i18n-ja">共同研究：マルチモーダル感情データセット構築</span>
+                  <span class="i18n-en">Collaborative dataset of multimodal emotion signals</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">成果：感情推定モデルの説明可能性指標</span>
+                  <span class="i18n-en">Explainable affective inference metrics</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">連携：医療機関との情動評価プロジェクト</span>
+                  <span class="i18n-en">Clinical partnerships for emotional assessment</span>
+                </li>
               </ul>
             </article>
             <article>
-              <h3>方向二：主题名称</h3>
+              <h3>
+                <span class="i18n-ja">人とAIの共感インタラクション</span>
+                <span class="i18n-en">Human-AI Empathic Interaction</span>
+              </h3>
               <p>
-                介绍另一个研究方向，可以结合图表或图片展示科研亮点。
+                <span class="i18n-ja">
+                  情緒応答型対話システムやアバターエージェントを開発し、共感的コミュニケーションUXの指標化に取り組んでいます。
+                </span>
+                <span class="i18n-en">
+                  We design emotionally responsive conversational agents and avatars, establishing actionable metrics for empathic user experience.
+                </span>
               </p>
               <ul>
-                <li>代表项目 D</li>
-                <li>核心技术 E</li>
-                <li>应用场景 F</li>
+                <li>
+                  <span class="i18n-ja">プロジェクト：情動フィードバック型対話ボット</span>
+                  <span class="i18n-en">Project: Emotion-aware conversational companion</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">技術：プロソディ駆動型音声合成</span>
+                  <span class="i18n-en">Technique: Prosody-conditioned speech synthesis</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">応用：教育・福祉向けコミュニケーション支援</span>
+                  <span class="i18n-en">Applied to assistive and educational interfaces</span>
+                </li>
               </ul>
             </article>
             <article>
-              <h3>方向三：主题名称</h3>
+              <h3>
+                <span class="i18n-ja">倫理・社会実装</span>
+                <span class="i18n-en">Ethics & Societal Deployment</span>
+              </h3>
               <p>
-                对未来重点布局的研究方向做出展望，写明计划中的跨学科合作或重要目标。
+                <span class="i18n-ja">
+                  感情データ利用の倫理指針策定とガバナンス設計、社会受容性評価のためのリビングラボ運営を行います。
+                </span>
+                <span class="i18n-en">
+                  We establish ethical frameworks and governance models for affective data, hosting living labs to evaluate societal acceptance.
+                </span>
               </p>
               <ul>
-                <li>即将启动的项目 G</li>
-                <li>合作机构 H</li>
-                <li>预计成果 I</li>
+                <li>
+                  <span class="i18n-ja">ラボ：感情データ利活用リビングラボ</span>
+                  <span class="i18n-en">Living lab for affective data stewardship</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">政策提言：感性AIに関する白書</span>
+                  <span class="i18n-en">Whitepaper on affective AI governance</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">連携：国内外の政策研究機関</span>
+                  <span class="i18n-en">Collaboration with policy institutes</span>
+                </li>
               </ul>
             </article>
           </div>
@@ -126,21 +284,36 @@
       <section id="news" class="section">
         <div class="container">
           <div class="section-header">
-            <h2>最新动态</h2>
-            <a class="link" href="#">查看更多动态</a>
+            <h2>
+              <span class="i18n-ja">ニュース</span>
+              <span class="i18n-en">News & Highlights</span>
+            </h2>
+            <a class="link" href="#">
+              <span class="i18n-ja">ニュース一覧へ</span>
+              <span class="i18n-en">View Archive</span>
+            </a>
           </div>
           <ul class="news-list">
             <li>
-              <time datetime="2024-05-18">2024 年 5 月 18 日</time>
-              <a href="#">在此记录最新新闻或活动，添加外部报道链接</a>
+              <time datetime="2024-05-18">2024.05.18</time>
+              <a href="#">
+                <span class="i18n-ja">国際会議CHI 2024で感情対話モデルに関する研究がBest Paperに選出</span>
+                <span class="i18n-en">CHI 2024 Best Paper awarded to our work on affective dialogue models</span>
+              </a>
             </li>
             <li>
-              <time datetime="2024-04-22">2024 年 4 月 22 日</time>
-              <a href="#">论文被顶级会议录用的消息，附论文链接</a>
+              <time datetime="2024-04-06">2024.04.06</time>
+              <a href="#">
+                <span class="i18n-ja">感性インタラクションのリビングラボが京都大学本部構内に開設</span>
+                <span class="i18n-en">Living lab for empathic interaction launches on Kyoto University campus</span>
+              </a>
             </li>
             <li>
-              <time datetime="2024-03-02">2024 年 3 月 2 日</time>
-              <a href="#">团队成员获奖或参加重要论坛的信息</a>
+              <time datetime="2024-02-15">2024.02.15</time>
+              <a href="#">
+                <span class="i18n-ja">文部科学省ムーンショット型研究開発事業に採択</span>
+                <span class="i18n-en">Selected for the MEXT Moonshot R&D program</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -148,35 +321,74 @@
 
       <section id="people" class="section section-alt">
         <div class="container">
-          <h2>团队成员</h2>
+          <h2>
+            <span class="i18n-ja">メンバー</span>
+            <span class="i18n-en">Our Team</span>
+          </h2>
           <div class="people-grid">
             <article class="person">
-              <div class="avatar" aria-hidden="true">照片</div>
-              <h3>姓名 A</h3>
-              <p class="title">教授 / 研究室主任</p>
-              <p>研究领域：XXXX。介绍主要研究兴趣、代表成果或荣誉。</p>
-              <a class="link" href="#">个人主页</a>
+              <div class="avatar" aria-hidden="true">○</div>
+              <h3>Professor Name</h3>
+              <p class="title">
+                <span class="i18n-ja">教授 / 主任研究者</span>
+                <span class="i18n-en">Professor / Principal Investigator</span>
+              </p>
+              <p>
+                <span class="i18n-ja">感情理解モデル・情動対話デザイン・倫理ガバナンスを専門とし、国際会議で基調講演多数。</span>
+                <span class="i18n-en">Focus areas include affect modeling, emotional dialogue design, and ethics of empathic systems; frequent keynote speaker at top venues.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">研究者ページ</span>
+                <span class="i18n-en">Research Profile</span>
+              </a>
             </article>
             <article class="person">
-              <div class="avatar" aria-hidden="true">照片</div>
-              <h3>姓名 B</h3>
-              <p class="title">副教授 / 研究员</p>
-              <p>研究领域：XXXX。介绍主要研究兴趣、代表成果或荣誉。</p>
-              <a class="link" href="#">个人主页</a>
+              <div class="avatar" aria-hidden="true">○</div>
+              <h3>Associate Name</h3>
+              <p class="title">
+                <span class="i18n-ja">准教授 / シニアリサーチャー</span>
+                <span class="i18n-en">Associate Professor / Senior Researcher</span>
+              </p>
+              <p>
+                <span class="i18n-ja">マルチモーダルセンシングと深層学習による感情解析を担当。生体計測と機械学習の融合に注力。</span>
+                <span class="i18n-en">Leads multimodal sensing and deep learning for affect analysis, bridging physiological measurements with robust machine learning.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">研究者ページ</span>
+                <span class="i18n-en">Research Profile</span>
+              </a>
             </article>
             <article class="person">
-              <div class="avatar" aria-hidden="true">照片</div>
-              <h3>姓名 C</h3>
-              <p class="title">博士生 / 硕士生</p>
-              <p>研究领域：XXXX。介绍主要研究兴趣、代表成果或荣誉。</p>
-              <a class="link" href="#">个人主页</a>
+              <div class="avatar" aria-hidden="true">○</div>
+              <h3>Doctoral Student</h3>
+              <p class="title">
+                <span class="i18n-ja">博士課程</span>
+                <span class="i18n-en">Doctoral Candidate</span>
+              </p>
+              <p>
+                <span class="i18n-ja">情動適応型アバターのUX評価と長期フィールドスタディを担当。ヒューマンセンタード視点で研究を推進。</span>
+                <span class="i18n-en">Conducts longitudinal field studies evaluating empathic avatars through human-centered design.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">研究者ページ</span>
+                <span class="i18n-en">Research Profile</span>
+              </a>
             </article>
             <article class="person">
-              <div class="avatar" aria-hidden="true">照片</div>
-              <h3>姓名 D</h3>
-              <p class="title">博士后</p>
-              <p>研究领域：XXXX。介绍主要研究兴趣、代表成果或荣誉。</p>
-              <a class="link" href="#">个人主页</a>
+              <div class="avatar" aria-hidden="true">○</div>
+              <h3>Visiting Fellow</h3>
+              <p class="title">
+                <span class="i18n-ja">客員研究員</span>
+                <span class="i18n-en">Visiting Research Fellow</span>
+              </p>
+              <p>
+                <span class="i18n-ja">国際連携プロジェクトに参加し、情動コンテンツ分析と評価指標設計を担当。</span>
+                <span class="i18n-en">Collaborates on international projects focused on affective content analytics and evaluation frameworks.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">研究者ページ</span>
+                <span class="i18n-en">Research Profile</span>
+              </a>
             </article>
           </div>
         </div>
@@ -185,30 +397,45 @@
       <section id="publications" class="section">
         <div class="container">
           <div class="section-header">
-            <h2>代表论文</h2>
-            <a class="link" href="#">完整列表</a>
+            <h2>
+              <span class="i18n-ja">主要論文</span>
+              <span class="i18n-en">Selected Publications</span>
+            </h2>
+            <a class="link" href="#">
+              <span class="i18n-ja">全件を表示</span>
+              <span class="i18n-en">Full List</span>
+            </a>
           </div>
           <ol class="publication-list">
             <li>
-              <span class="title">论文标题示例</span>
-              <span class="authors">作者 A, 作者 B, 作者 C</span>
-              <span class="venue">会议/期刊名称, 年份</span>
+              <span class="title">Paper Title Placeholder</span>
+              <span class="authors">Author A, Author B, Author C</span>
+              <span class="venue">
+                <span class="i18n-ja">会議/ジャーナル, 年</span>
+                <span class="i18n-en">Conference/Journal, Year</span>
+              </span>
               <a class="btn-ghost" href="#">PDF</a>
-              <a class="btn-ghost" href="#">BibTex</a>
+              <a class="btn-ghost" href="#">BibTeX</a>
             </li>
             <li>
-              <span class="title">论文标题示例</span>
-              <span class="authors">作者 A, 作者 B, 作者 C</span>
-              <span class="venue">会议/期刊名称, 年份</span>
+              <span class="title">Paper Title Placeholder</span>
+              <span class="authors">Author A, Author B, Author C</span>
+              <span class="venue">
+                <span class="i18n-ja">会議/ジャーナル, 年</span>
+                <span class="i18n-en">Conference/Journal, Year</span>
+              </span>
               <a class="btn-ghost" href="#">PDF</a>
-              <a class="btn-ghost" href="#">BibTex</a>
+              <a class="btn-ghost" href="#">BibTeX</a>
             </li>
             <li>
-              <span class="title">论文标题示例</span>
-              <span class="authors">作者 A, 作者 B, 作者 C</span>
-              <span class="venue">会议/期刊名称, 年份</span>
+              <span class="title">Paper Title Placeholder</span>
+              <span class="authors">Author A, Author B, Author C</span>
+              <span class="venue">
+                <span class="i18n-ja">会議/ジャーナル, 年</span>
+                <span class="i18n-en">Conference/Journal, Year</span>
+              </span>
               <a class="btn-ghost" href="#">PDF</a>
-              <a class="btn-ghost" href="#">BibTex</a>
+              <a class="btn-ghost" href="#">BibTeX</a>
             </li>
           </ol>
         </div>
@@ -216,28 +443,58 @@
 
       <section id="opportunities" class="section section-alt">
         <div class="container">
-          <h2>招生与招聘</h2>
-          <p>
-            在这里发布研究生、博士后、科研助理或实习生的招聘信息。说明申请要求、待遇和申请截止日期。
-          </p>
+          <h2>
+            <span class="i18n-ja">参加希望の皆様へ</span>
+            <span class="i18n-en">Join the Lab</span>
+          </h2>
           <div class="opportunity-cards">
             <article>
-              <h3>博士研究生（2025 秋季入学）</h3>
+              <h3>
+                <span class="i18n-ja">博士課程募集（2025年4月入学）</span>
+                <span class="i18n-en">PhD Admissions (April 2025)</span>
+              </h3>
               <ul>
-                <li>研究方向：XXXX</li>
-                <li>申请截止：2024 年 12 月 1 日</li>
-                <li>申请材料：简历、研究计划、推荐信</li>
+                <li>
+                  <span class="i18n-ja">テーマ例：感情センシング、共感インタラクション</span>
+                  <span class="i18n-en">Focus: affective sensing, empathic interaction design</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">締切：2024年11月30日</span>
+                  <span class="i18n-en">Deadline: 30 Nov 2024</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">提出：研究計画、推薦状2通、ポートフォリオ</span>
+                  <span class="i18n-en">Materials: research plan, two references, portfolio</span>
+                </li>
               </ul>
-              <a class="btn" href="#">填写申请表</a>
+              <a class="btn" href="#">
+                <span class="i18n-ja">出願プロセス</span>
+                <span class="i18n-en">Application Process</span>
+              </a>
             </article>
             <article>
-              <h3>博士后招聘</h3>
+              <h3>
+                <span class="i18n-ja">共同研究・産学連携</span>
+                <span class="i18n-en">Collaborative Research & Partnerships</span>
+              </h3>
               <ul>
-                <li>研究方向：XXXX</li>
-                <li>岗位要求：博士学位、相关领域研究经验</li>
-                <li>待遇：依据学校政策提供有竞争力薪酬</li>
+                <li>
+                  <span class="i18n-ja">対象：企業・研究機関・自治体</span>
+                  <span class="i18n-en">Open to: industry, research institutes, public sector</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">領域：感情AI、ウェルビーイング、スマートシティ</span>
+                  <span class="i18n-en">Domains: affective AI, wellbeing, smart society</span>
+                </li>
+                <li>
+                  <span class="i18n-ja">支援：PoC設計、データ収集、評価実験</span>
+                  <span class="i18n-en">Support: PoC design, data acquisition, evaluation</span>
+                </li>
               </ul>
-              <a class="btn" href="#">发送申请邮件</a>
+              <a class="btn" href="#">
+                <span class="i18n-ja">お問い合わせ</span>
+                <span class="i18n-en">Contact Us</span>
+              </a>
             </article>
           </div>
         </div>
@@ -245,22 +502,49 @@
 
       <section id="resources" class="section">
         <div class="container">
-          <h2>科研资源</h2>
+          <h2>
+            <span class="i18n-ja">リソース</span>
+            <span class="i18n-en">Resources</span>
+          </h2>
           <div class="resource-grid">
             <article>
-              <h3>开源项目</h3>
-              <p>列出研究室维护的开源代码仓库或软件工具。</p>
-              <a class="link" href="#">GitHub 组织</a>
+              <h3>
+                <span class="i18n-ja">オープンソース</span>
+                <span class="i18n-en">Open-source</span>
+              </h3>
+              <p>
+                <span class="i18n-ja">感情推定APIやアノテーションツールなど、研究成果を公開しています。</span>
+                <span class="i18n-en">We release affect inference APIs, annotation tools, and reproducible pipelines.</span>
+              </p>
+              <a class="link" href="#">GitHub</a>
             </article>
             <article>
-              <h3>数据集</h3>
-              <p>介绍研究室发布的数据集，以及获取方式或使用协议。</p>
-              <a class="link" href="#">数据发布页</a>
+              <h3>
+                <span class="i18n-ja">データセット</span>
+                <span class="i18n-en">Datasets</span>
+              </h3>
+              <p>
+                <span class="i18n-ja">匿名化されたマルチモーダル情動データや評価指標を提供予定です。</span>
+                <span class="i18n-en">Access curated multimodal emotion datasets with ethical usage guidelines.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">取得方法</span>
+                <span class="i18n-en">Request Access</span>
+              </a>
             </article>
             <article>
-              <h3>课程与讲座</h3>
-              <p>整理相关课程、公开讲座、在线教程等教育资源。</p>
-              <a class="link" href="#">教学资源</a>
+              <h3>
+                <span class="i18n-ja">講義・ワークショップ</span>
+                <span class="i18n-en">Courses & Workshops</span>
+              </h3>
+              <p>
+                <span class="i18n-ja">感情AIの最新トピックを扱う集中講義や企業向けの研修プログラムを実施。</span>
+                <span class="i18n-en">We offer intensive courses and executive workshops on affective AI.</span>
+              </p>
+              <a class="link" href="#">
+                <span class="i18n-ja">スケジュール</span>
+                <span class="i18n-en">Schedule</span>
+              </a>
             </article>
           </div>
         </div>
@@ -268,42 +552,79 @@
 
       <section id="contact" class="section section-alt">
         <div class="container">
-          <h2>联系我们</h2>
+          <h2>
+            <span class="i18n-ja">アクセス</span>
+            <span class="i18n-en">Contact & Access</span>
+          </h2>
           <div class="contact-grid">
             <div>
-              <h3>联系方式</h3>
-              <p>邮箱：contact@example.edu</p>
-              <p>电话：(+86) 000-0000-0000</p>
-              <p>地址：XX 大学 XX 校区 XX 楼 X 层</p>
+              <h3>
+                <span class="i18n-ja">所在地</span>
+                <span class="i18n-en">Location</span>
+              </h3>
+              <p>
+                <span class="i18n-ja">京都大学 吉田キャンパス 情報学研究科本館（仮）</span>
+                <span class="i18n-en">Graduate School of Informatics Main Building, Yoshida Campus</span>
+              </p>
+              <p>
+                <span class="i18n-ja">E-mail: contact@example.kyoto-u.ac.jp</span>
+                <span class="i18n-en">E-mail: contact@example.kyoto-u.ac.jp</span>
+              </p>
+              <p>
+                <span class="i18n-ja">Tel: (+81) 00-0000-0000</span>
+                <span class="i18n-en">Tel: (+81) 00-0000-0000</span>
+              </p>
             </div>
             <form class="contact-form">
-              <h3>留言表单</h3>
+              <h3>
+                <span class="i18n-ja">お問い合わせフォーム</span>
+                <span class="i18n-en">Inquiry Form</span>
+              </h3>
               <label>
-                姓名
-                <input type="text" name="name" placeholder="请输入姓名" />
+                <span class="i18n-ja">お名前</span>
+                <span class="i18n-en">Name</span>
+                <input type="text" name="name" placeholder="Your Name" />
               </label>
               <label>
-                邮箱
-                <input type="email" name="email" placeholder="请输入邮箱" />
+                <span class="i18n-ja">メールアドレス</span>
+                <span class="i18n-en">Email</span>
+                <input type="email" name="email" placeholder="you@example.com" />
               </label>
               <label>
-                留言
-                <textarea name="message" rows="4" placeholder="请留下您的问题或合作意向"></textarea>
+                <span class="i18n-ja">メッセージ</span>
+                <span class="i18n-en">Message</span>
+                <textarea name="message" rows="4" placeholder="How can we collaborate?"></textarea>
               </label>
-              <button class="btn" type="submit">发送</button>
+              <button class="btn" type="submit">
+                <span class="i18n-ja">送信</span>
+                <span class="i18n-en">Send</span>
+              </button>
             </form>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container">
-        <p>© <span id="current-year"></span> 研究室名称. 保留所有权利。</p>
+        <p>
+          © <span id="current-year"></span>
+          <span class="i18n-ja">京都大学 感性情報科学研究室</span>
+          <span class="i18n-en">Kyoto University Affective Computing Laboratory</span>
+        </p>
         <div class="footer-links">
-          <a href="#">隐私政策</a>
-          <a href="#">网站地图</a>
-          <a href="#">友情链接</a>
+          <a href="#">
+            <span class="i18n-ja">プライバシーポリシー</span>
+            <span class="i18n-en">Privacy Policy</span>
+          </a>
+          <a href="#">
+            <span class="i18n-ja">サイトマップ</span>
+            <span class="i18n-en">Site Map</span>
+          </a>
+          <a href="#">
+            <span class="i18n-ja">関連リンク</span>
+            <span class="i18n-en">Affiliations</span>
+          </a>
         </div>
       </div>
     </footer>
@@ -316,6 +637,41 @@
         toggle.setAttribute('aria-expanded', String(!expanded));
         menu?.classList.toggle('open');
       });
+
+      const buttons = document.querySelectorAll('[data-switch-lang]');
+      const htmlEl = document.documentElement;
+      const bodyEl = document.body;
+      let storedLang = null;
+
+      try {
+        storedLang = window.localStorage.getItem('lab-lang');
+      } catch (error) {
+        storedLang = null;
+      }
+      const defaultLang = storedLang === 'en' ? 'en' : 'ja';
+
+      const switchLanguage = (lang) => {
+        bodyEl.setAttribute('data-lang', lang);
+        htmlEl.setAttribute('lang', lang);
+        buttons.forEach((btn) => {
+          const isActive = btn.dataset.switchLang === lang;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-pressed', String(isActive));
+        });
+        try {
+          window.localStorage.setItem('lab-lang', lang);
+        } catch (error) {
+          /* localStorage may be disabled; ignore */
+        }
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          switchLanguage(button.dataset.switchLang || 'ja');
+        });
+      });
+
+      switchLanguage(defaultLang);
       document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
   </body>
